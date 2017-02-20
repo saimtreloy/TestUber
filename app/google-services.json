@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1091943601976",
+    "firebase_url": "https://test-uber.firebaseio.com",
+    "project_id": "test-uber",
+    "storage_bucket": "test-uber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091943601976:android:56399c246e0c3d0f",
+        "android_client_info": {
+          "package_name": "com.moodybugs.testuber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091943601976-2c2uep1rae4718p7lpktdmsulj4hh55d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0dsfRY2oyBFJ21Wpx9XfGeHlxDnwbDHs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    tools:context="com.moodybugs.testuber.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/flogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:layout_below="@id/logo"
+        android:hint="Mobile Number"
+        android:ems="10"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/inputMobileNumber" />
+
+    <Button
+        android:id="@+id/btnVarify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Varify"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_below="@id/inputMobileNumber"
+        android:background="@drawable/edittext"
+        android:shadowColor="@color/colorAccent"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtWait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutVarified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_mobile_varifyied"
+            android:id="@+id/imageButtonVarified"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number Varified"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>
